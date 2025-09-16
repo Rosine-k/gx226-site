@@ -1,0 +1,49 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center; /* centre le nav horizontalement */
+  align-items: center;
+  transition: background-color 0.4s ease;
+  z-index: 1000;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 60px; 
+  margin: 0;
+  padding: 0;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  
+}
+
+.header a:hover {
+  color: #ffd700; /* couleur au survol */
+}
+
+.header.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header.scrolled a {
+  color: black;
+}
+
+.header.scrolled a:hover {
+  color: #ffd700; 
+}
+
+.header-nav {
+    margin-right: 70px;
+}
